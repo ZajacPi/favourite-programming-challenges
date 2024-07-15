@@ -29,7 +29,7 @@ class Solution(object):
                 i+=1
             else:
                 j-=1
-
+        #visualisation
         def_col = 'k'
         res_col = 'r'
         bar_width=0.25
