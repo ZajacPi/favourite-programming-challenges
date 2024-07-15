@@ -16,16 +16,37 @@ class Solution(object):
         :rtype: int
         """
         result = (None, None)
-        volume = 0
+        max_volume = 0
         i=0
         j=len(heights)-1
         while i!=j:
-            volume = max(volume, min(heights[i], heights[j])*(j-i))
+        
+            volume = min(heights[i], heights[j])*(j-i)
+            if volume > max_volume:
+                max_volume = volume
+                result = (i, j)
             if heights[i]<heights[j]:
                 i+=1
             else:
                 j-=1
-        return volume
+
+        def_col = 'k'
+        res_col = 'r'
+        bar_width=0.25
+        for i, height in enumerate(heights):
+            if i in result:
+                plt.bar(i, height, width=bar_width, color=res_col)
+            else:
+                plt.bar(i, height, width=bar_width, color=def_col)
+
+        # drawing water
+        left_x = result[0]
+        right_x = result[1]
+        min_height = min(heights[left_x], heights[right_x])
+        rect = patches.Rectangle((left_x+0.5*bar_width, 0), right_x - left_x-bar_width, min_height, color='b', alpha=0.3)
+        plt.gca().add_patch(rect)
+        plt.show()
+        return max_volume
 if __name__ == "__main__":
     task = Solution()
     height1 = [1,8,6,2,5,4,8,3,7]
