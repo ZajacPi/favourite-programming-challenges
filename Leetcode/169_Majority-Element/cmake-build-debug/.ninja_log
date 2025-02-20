@@ -1,0 +1,12 @@
+# ninja log v5
+5	264	7495904358643798	build.ninja	aed0b2b58e966372
+0	490	7495904364823672	CMakeFiles/169_Majority_Element.dir/majority.cpp.obj	c95d5ac8ad868b16
+492	667	7495904366549615	169_Majority_Element.exe	d4f88b548053b6a7
+4	584	7495905942359646	CMakeFiles/169_Majority_Element.dir/majority.cpp.obj	c95d5ac8ad868b16
+585	752	7495905943965061	169_Majority_Element.exe	d4f88b548053b6a7
+4	477	7495906992679586	CMakeFiles/169_Majority_Element.dir/majority.cpp.obj	c95d5ac8ad868b16
+478	608	7495906993936169	169_Majority_Element.exe	d4f88b548053b6a7
+3	466	7495907238513845	CMakeFiles/169_Majority_Element.dir/majority.cpp.obj	c95d5ac8ad868b16
+469	588	7495907239696901	169_Majority_Element.exe	d4f88b548053b6a7
+4	490	7495914725195016	CMakeFiles/169_Majority_Element.dir/majority.cpp.obj	c95d5ac8ad868b16
+491	622	7495914726486044	169_Majority_Element.exe	d4f88b548053b6a7
